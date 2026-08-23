@@ -2,7 +2,7 @@ import React from 'react'
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-black font-sans">
+    <div className="min-h-screen bg-white text-black font-sans overflow-x-hidden">
       <style>{`
         @keyframes fadeInUp {
           from { opacity: 0; transform: translateY(12px); }
@@ -107,9 +107,9 @@ function App() {
 
           </div>
 
-          {/* Watermark */}
-          <div className="absolute -top-1/3 left-1/2 -translate-x-1/2 -z-10 pointer-events-none overflow-hidden">
-            <span className="block text-[110px] md:text-[140px] lg:text-[180px] font-black text-gray-50 opacity-5 leading-none tracking-tight">
+          {/* Watermark - contained so it can't cause horizontal overflow */}
+          <div className="absolute -top-1/3 left-1/2 -translate-x-1/2 -z-10 pointer-events-none overflow-hidden max-w-full">
+            <span className="block text-[60px] md:text-[100px] lg:text-[140px] font-black text-gray-50 opacity-5 leading-none tracking-tight">
               Common Sense
             </span>
           </div>
