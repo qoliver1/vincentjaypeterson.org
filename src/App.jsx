@@ -4,8 +4,8 @@ function App() {
   return (
     <div className="min-h-screen bg-white text-black font-sans">
       <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
-        {/* Hero Section */}
-        <section className="py-16 md:py-24 lg:py-32">
+        {/* Hero Section - reduced top spacing */}
+        <main className="pt-12 md:pt-16 lg:pt-24 pb-12 md:pb-16 lg:pb-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             {/* Content Column */}
             <div className="space-y-10">
@@ -20,7 +20,7 @@ function App() {
               </div>
 
               {/* Biography */}
-              <div className="space-y-4 pt-3 text-lg md:text-xl leading-relaxed text-gray-800">
+              <div className="space-y-4 text-lg md:text-xl leading-relaxed text-gray-800">
                 <p>
                   Lifelong Otsego resident. Husband. Father. Small-business owner with 25 years of experience building and operating a private security company that employed hundreds of officers.
                 </p>
@@ -75,7 +75,7 @@ function App() {
               </div>
             </div>
           </div>
-        </section>
+        </main>
 
         {/* Footer / Disclaimer */}
         <footer className="border-t border-gray-200 py-8">
