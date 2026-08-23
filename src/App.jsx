@@ -18,7 +18,7 @@ function App() {
         {/* Hero Section */}
         <main className="pt-16 md:pt-20 lg:pt-28 pb-16 md:pb-20 lg:pb-28 relative">
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
 
             {/* Content Column */}
             <div className="space-y-10">
@@ -34,6 +34,19 @@ function App() {
                   <h1 className="text-5xl lg:text-6xl font-black leading-none tracking-tight">
                     Vincent Jay Peterson
                   </h1>
+                </div>
+              </div>
+
+              {/* Photo: mobile inline under header, desktop column on right */}
+              <div className="lg:hidden fade-in-delay-2">
+                <div className="relative w-full max-w-xs mx-auto">
+                  <div className="relative pb-[100%] rounded-[10px] overflow-hidden border border-gray-200">
+                    <img
+                      src="./vincentjaypeterson.jpg"
+                      alt="Vincent Jay Peterson"
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
 
@@ -78,10 +91,10 @@ function App() {
 
             </div>
 
-            {/* Image Column */}
-            <div className="relative fade-in-delay-2">
+            {/* Image Column - desktop only, right column */}
+            <div className="hidden lg:block lg:order-2 relative fade-in-delay-2">
               <div className="absolute -inset-6 bg-gray-50 rounded-2xl -z-10 border border-gray-100" />
-              <div className="w-full max-w-xs lg:max-w-sm mt-16 lg:mt-0 mx-auto lg:mx-0">
+              <div className="w-full max-w-sm">
                 <div className="relative pb-[100%] rounded-[10px] overflow-hidden border border-gray-200">
                   <img
                     src="./vincentjaypeterson.jpg"
