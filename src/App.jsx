@@ -23,7 +23,7 @@ function App() {
             {/* Content Column */}
             <div className="space-y-10">
 
-              {/* Header Block */}
+              {/* Header Block - Badge on top, name below */}
               <div className="space-y-7">
                 <div className="fade-in">
                   <span className="inline-block px-5 py-2.5 text-xs font-medium tracking-widest uppercase text-gray-400 border border-gray-300 rounded">
