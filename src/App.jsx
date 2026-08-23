@@ -84,7 +84,7 @@ function App() {
               <div className="w-full max-w-xs lg:max-w-sm mt-16 lg:mt-0 mx-auto lg:mx-0">
                 <div className="relative pb-[100%] rounded-[10px] overflow-hidden border border-gray-200">
                   <img
-                    src="/vincentjaypeterson.jpg"
+                    src="./vincentjaypeterson.jpg"
                     alt="Vincent Jay Peterson"
                     className="absolute inset-0 w-full h-full object-cover"
                   />
