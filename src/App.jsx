@@ -17,7 +17,6 @@ function App() {
 
         {/* Hero Section */}
         <main className="pt-16 md:pt-20 lg:pt-28 pb-16 md:pb-20 lg:pb-28 relative">
-
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
 
             {/* Content Column */}
@@ -26,7 +25,7 @@ function App() {
               {/* Header Block - Badge on top, name below */}
               <div className="space-y-7">
                 <div className="fade-in">
-                  <span className="inline-block px-5 py-2.5 text-xs font-medium tracking-widest uppercase text-gray-400 border border-gray-300 rounded">
+                  <span className="block w-full px-5 py-2.5 text-xs font-extrabold tracking-widest uppercase text-center text-gray-700 border-2 border-gray-600 rounded">
                     Candidate for Otsego City Council
                   </span>
                 </div>
@@ -89,10 +88,21 @@ function App() {
                 </p>
               </div>
 
+              {/* Yard Sign - mobile only */}
+              <div className="lg:hidden fade-in-delay-2 mt-6">
+                <div className="relative w-full max-w-[304px] h-[202px] overflow-hidden rounded-[10px] mx-auto">
+                  <img
+                    src="./vince-yard-sign.png"
+                    alt="Vincent Jay Peterson yard sign"
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+
             </div>
 
             {/* Image Column - desktop only, right column */}
-            <div className="hidden lg:block lg:order-2 relative fade-in-delay-2">
+            <div className="hidden lg:block lg:col-start-2 relative fade-in-delay-2">
               <div className="absolute -inset-6 bg-gray-50 rounded-2xl -z-10 border border-gray-100" />
               <div className="w-full max-w-sm">
                 <div className="relative pb-[100%] rounded-[10px] overflow-hidden border border-gray-200">
@@ -103,6 +113,18 @@ function App() {
                   />
                 </div>
               </div>
+
+              {/* Yard Sign - desktop only, nested inside photo column */}
+              <div className="mt-12 fade-in-delay-2">
+                <div className="relative w-full max-w-[304px] h-[202px] overflow-hidden rounded-[10px]">
+                  <img
+                    src="./vince-yard-sign.png"
+                    alt="Vincent Jay Peterson yard sign"
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+
             </div>
 
           </div>
