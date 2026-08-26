@@ -93,7 +93,7 @@ function App() {
                   <img
                     src="./vince-yard-sign.png"
                     alt="Vincent Jay Peterson yard sign"
-                    className="absolute inset-0 w-full h-full object-contain"
+                    className="absolute inset-0 w-full h-full object-cover rounded-[10px]"
                   />
                 </div>
               </div>
@@ -119,7 +119,7 @@ function App() {
                   <img
                     src="./vince-yard-sign.png"
                     alt="Vincent Jay Peterson yard sign"
-                    className="absolute inset-0 w-full h-full object-contain"
+                    className="absolute inset-0 w-full h-full object-cover rounded-[10px]"
                   />
                 </div>
               </div>
