@@ -30,8 +30,8 @@ function App() {
                   </span>
                 </div>
                 <div className="fade-in-delay">
-                  <h1 className="text-5xl lg:text-6xl font-black leading-none tracking-tight">
-                    Vincent Jay Peterson
+                  <h1 className="text-center text-5xl lg:text-6xl font-black leading-none tracking-tight">
+                    Vincent "Vinny" Jay Peterson
                   </h1>
                 </div>
               </div>
