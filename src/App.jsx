@@ -62,7 +62,7 @@ function App() {
               {/* Campaign Statement */}
               <div className="fade-in-delay space-y-6 py-2">
                 <p className="text-base md:text-lg font-medium text-gray-800 max-w-prose">
-                  I'm running for City Council to protect taxpayers, control spending, and keep Otsego a place where families can still afford to live.
+                  Bring common sense back to the Otsego City Council. Keep Otsego a place where families can still afford to live.
                 </p>
               </div>
 
@@ -76,11 +76,6 @@ function App() {
                 </p>
               </div>
 
-              {/* Supporting line */}
-              <p className="fade-in text-lg md:text-xl font-medium text-gray-700 pt-2">
-                Just practical, long-term budgeting and real accountability.
-              </p>
-
               {/* Campaign Slogan */}
               <div className="fade-in-delay pt-10 border-t border-gray-200">
                 <p className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight">
@@ -90,7 +85,7 @@ function App() {
 
               {/* Yard Sign - mobile only */}
               <div className="lg:hidden fade-in-delay-2 mt-6">
-                <div className="relative w-full max-w-[304px] h-[202px] overflow-hidden rounded-[10px] mx-auto">
+                <div className="relative w-full max-w-[360px] h-[240px] overflow-hidden rounded-[10px] mx-auto">
                   <img
                     src="./vince-yard-sign.png"
                     alt="Vincent Jay Peterson yard sign"
@@ -116,7 +111,7 @@ function App() {
 
               {/* Yard Sign - desktop only, nested inside photo column */}
               <div className="mt-12 fade-in-delay-2">
-                <div className="relative w-full max-w-[304px] h-[202px] overflow-hidden rounded-[10px]">
+                <div className="relative w-full max-w-[360px] h-[240px] overflow-hidden rounded-[10px]">
                   <img
                     src="./vince-yard-sign.png"
                     alt="Vincent Jay Peterson yard sign"
