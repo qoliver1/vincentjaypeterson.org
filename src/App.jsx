@@ -51,12 +51,63 @@ function App() {
 
               {/* Biography */}
               <div className="fade-in-delay-2 space-y-5 text-base md:text-lg leading-relaxed text-gray-800 max-w-prose">
+                <p>Hello, fellow citizens of Otsego.</p>
                 <p>
-                  Lifelong Otsego resident. Husband. Father. Small-business owner with 25 years of experience building and operating a private security company that employed hundreds of officers.
+                  I am a candidate for the Otsego City Council. My family moved to Otsego in 1972, and I
+                  graduated from St. Michael-Albertville (STMA) High School. When I turned 16 and got my
+                  driver's license, I joined the Wright County Sheriff Explorers. We competed at the MN
+                  State Explorer competition four times and took home trophies all four years, and in 1989
+                  I was elected Captain of the Explorers.
                 </p>
                 <p>
-                  Former Wright County Sheriff Reserve Explorer and former Otsego EDAAC Commissioner.
+                  After high school I earned my Associate of Science degree from North Hennepin Community
+                  College, majoring in Law Enforcement and minoring in Political Science. In college I was
+                  elected President of the Law Enforcement Student Organization (LESO) and also served as
+                  the LESO student council representative.
                 </p>
+                <p>
+                  While I was in college I worked as a security officer — and rather than become a Deputy
+                  Sheriff, I bought the security company I was working for. I owned and operated my private
+                  detective and uniformed security guard company until 2020, when I retired because of
+                  COVID. During my career I bought out four other detective/security companies and employed
+                  hundreds of detectives and security guards. I have negotiated with the CEOs and upper
+                  management of many well-known companies in the metro area, and I was a bodyguard for
+                  Hollywood movie stars like Christian Slater, Woody Harrelson, Christopher Lloyd,
+                  Marisa Tomei, Rosie Perez, Elisabeth Shue, and Gladys Knight.
+                </p>
+                <p>
+                  In 1997 I was appointed Commissioner for the City of Otsego (EDAAC), on which I served
+                  for many years. Currently I am working part-time at the Albertville/Otsego compost site.
+                </p>
+                <p>
+                  The reason I am campaigning for Otsego City Council is that two seats are open, and I
+                  firmly believe we need to put a stop to the out-of-control and unnecessary spending that
+                  the big spenders on the City Council are doing. My motto: elect me to help put a stop to
+                  the unnecessary spending. I know we are a growing city and a lot of spending needs to
+                  happen — but in my opinion there is way too much unnecessary spending. For example, a new
+                  City Hall is out of the question.
+                </p>
+                <p>
+                  I hope to see many of you out and about while I am campaigning. If anyone has any
+                  questions, please contact me anytime. My email is{' '}
+                  <a
+                    href="mailto:ranger770@aol.com"
+                    className="underline decoration-gray-400 underline-offset-4 hover:text-black"
+                  >
+                    ranger770@aol.com
+                  </a>{' '}
+                  and my phone/text number is{' '}
+                  <a
+                    href="tel:+16127016991"
+                    className="underline decoration-gray-400 underline-offset-4 hover:text-black"
+                  >
+                    612-701-6991
+                  </a>.
+                </p>
+                <div className="pt-2 space-y-1 text-xl md:text-2xl font-bold tracking-tight text-black">
+                  <p>In God we trust,</p>
+                  <p>Vincent Jay Peterson</p>
+                </div>
               </div>
 
               {/* Campaign Statement */}
