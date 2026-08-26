@@ -14,14 +14,11 @@ function App() {
       `}</style>
 
       <div className="max-w-3xl mx-auto px-6 md:px-8 lg:px-12">
-
         {/* Hero Section */}
         <main className="pt-16 md:pt-20 lg:pt-28 pb-16 md:pb-20 lg:pb-28 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-
             {/* Content Column */}
             <div className="space-y-10">
-
               {/* Header Block - Badge on top, name below */}
               <div className="space-y-7">
                 <div className="fade-in">
@@ -53,39 +50,41 @@ function App() {
               <div className="fade-in-delay-2 space-y-5 text-base md:text-lg leading-relaxed text-gray-800 max-w-prose">
                 <p>Hello, fellow citizens of Otsego.</p>
                 <p>
-                  I am a candidate for the Otsego City Council. My family moved to Otsego in 1972, and I
-                  graduated from St. Michael-Albertville (STMA) High School. When I turned 16 and got my
-                  driver's license, I joined the Wright County Sheriff Explorers. We competed at the MN
-                  State Explorer competition four times and took home trophies all four years, and in 1989
-                  I was elected Captain of the Explorers.
+                  I am a candidate for the Otsego City Council. My family moved to Otsego in 1972,
+                  and I graduated from St. Michael-Albertville (STMA) High School. When I turned 16
+                  and got my driver's license, I joined the Wright County Sheriff Explorers. We
+                  competed at the MN State Explorer competition four times and took home trophies
+                  all four years, and in 1989 I was elected Captain of the Explorers.
                 </p>
                 <p>
-                  After high school I earned my Associate of Science degree from North Hennepin Community
-                  College, majoring in Law Enforcement and minoring in Political Science. In college I was
-                  elected President of the Law Enforcement Student Organization (LESO) and also served as
-                  the LESO student council representative.
+                  After high school I earned my Associate of Science degree from North Hennepin
+                  Community College, majoring in Law Enforcement and minoring in Political Science.
+                  In college I was elected President of the Law Enforcement Student Organization
+                  (LESO) and also served as the LESO student council representative.
                 </p>
                 <p>
-                  While I was in college I worked as a security officer — and rather than become a Deputy
-                  Sheriff, I bought the security company I was working for. I owned and operated my private
-                  detective and uniformed security guard company until 2020, when I retired because of
-                  COVID. During my career I bought out four other detective/security companies and employed
-                  hundreds of detectives and security guards. I have negotiated with the CEOs and upper
-                  management of many well-known companies in the metro area, and I was a bodyguard for
-                  Hollywood movie stars like Christian Slater, Woody Harrelson, Christopher Lloyd,
-                  Marisa Tomei, Rosie Perez, Elisabeth Shue, and Gladys Knight.
+                  While I was in college I worked as a security officer — and rather than become a
+                  Deputy Sheriff, I bought the security company I was working for. I owned and
+                  operated my private detective and uniformed security guard company until 2020,
+                  when I retired because of COVID. During my career I bought out four other
+                  detective/security companies and employed hundreds of detectives and security
+                  guards. I have negotiated with the CEOs and upper management of many well-known
+                  companies in the metro area, and I was a bodyguard for Hollywood movie stars like
+                  Christian Slater, Woody Harrelson, Christopher Lloyd, Marisa Tomei, Rosie Perez,
+                  Elisabeth Shue, and Gladys Knight.
                 </p>
                 <p>
-                  In 1997 I was appointed Commissioner for the City of Otsego (EDAAC), on which I served
-                  for many years. Currently I am working part-time at the Albertville/Otsego compost site.
+                  In 1997 I was appointed Commissioner for the City of Otsego (EDAAC), on which I
+                  served for many years. Currently I am working part-time at the Albertville/Otsego
+                  compost site.
                 </p>
                 <p>
-                  The reason I am campaigning for Otsego City Council is that two seats are open, and I
-                  firmly believe we need to put a stop to the out-of-control and unnecessary spending that
-                  the big spenders on the City Council are doing. My motto: elect me to help put a stop to
-                  the unnecessary spending. I know we are a growing city and a lot of spending needs to
-                  happen — but in my opinion there is way too much unnecessary spending. For example, a new
-                  City Hall is out of the question.
+                  The reason I am campaigning for Otsego City Council is that two seats are open,
+                  and I firmly believe we need to put a stop to the out-of-control and unnecessary
+                  spending that the big spenders on the City Council are doing. My motto: elect me
+                  to help put a stop to the unnecessary spending. I know we are a growing city and a
+                  lot of spending needs to happen — but in my opinion there is way too much
+                  unnecessary spending. For example, a new City Hall is out of the question.
                 </p>
                 <p>
                   I hope to see many of you out and about while I am campaigning. If anyone has any
@@ -102,7 +101,8 @@ function App() {
                     className="underline decoration-gray-400 underline-offset-4 hover:text-black"
                   >
                     612-701-6991
-                  </a>.
+                  </a>
+                  .
                 </p>
                 <div className="pt-2 space-y-1 text-xl md:text-2xl font-bold tracking-tight text-black">
                   <p>In God we trust,</p>
@@ -151,7 +151,6 @@ function App() {
                   </picture>
                 </div>
               </div>
-
             </div>
 
             {/* Image Column - desktop only, right column */}
@@ -180,9 +179,7 @@ function App() {
                   </picture>
                 </div>
               </div>
-
             </div>
-
           </div>
 
           {/* Watermark - contained so it can't cause horizontal overflow */}
@@ -191,7 +188,6 @@ function App() {
               Common Sense
             </span>
           </div>
-
         </main>
 
         {/* Footer / Disclaimer */}
@@ -200,7 +196,6 @@ function App() {
             Paid for by Vincent Jay Peterson for City Council
           </p>
         </footer>
-
       </div>
     </div>
   )
