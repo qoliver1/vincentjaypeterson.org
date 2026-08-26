@@ -60,12 +60,12 @@ function App() {
               </div>
 
               {/* Campaign Statement */}
-              <div className="fade-in-delay space-y-4 py-2">
-                <p className="text-base md:text-lg font-medium text-gray-800 max-w-prose">
+              <div className="fade-in-delay space-y-5 py-2">
+                <p className="text-base md:text-lg font-semibold text-gray-800 max-w-prose">
                   Bring common sense back to the Otsego City Council.
                 </p>
-                <div className="border-t border-gray-200 my-3"></div>
-                <p className="text-base md:text-lg text-gray-700 max-w-prose">
+                <div className="border-t border-gray-300 my-4"></div>
+                <p className="text-base md:text-lg font-semibold text-gray-800 max-w-prose">
                   Keep Otsego a place where families can still afford to live.
                 </p>
               </div>
@@ -93,7 +93,7 @@ function App() {
                   <img
                     src="./vince-yard-sign.png"
                     alt="Vincent Jay Peterson yard sign"
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-contain"
                   />
                 </div>
               </div>
@@ -119,7 +119,7 @@ function App() {
                   <img
                     src="./vince-yard-sign.png"
                     alt="Vincent Jay Peterson yard sign"
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-contain"
                   />
                 </div>
               </div>
