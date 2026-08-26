@@ -141,11 +141,14 @@ function App() {
               {/* Yard Sign - mobile only */}
               <div className="lg:hidden fade-in-delay-2 mt-6">
                 <div className="w-full max-w-[360px] mx-auto">
-                  <img
-                    src="./vince-yard-sign.png"
-                    alt="Vincent Jay Peterson yard sign"
-                    className="w-full h-auto rounded-[10px] border border-gray-200"
-                  />
+                  <picture>
+                    <source srcSet="./vince-yard-sign-720.webp" type="image/webp" />
+                    <img
+                      src="./vince-yard-sign-720.jpg"
+                      alt="Vincent Jay Peterson yard sign"
+                      className="w-full h-auto rounded-[10px] border border-gray-200"
+                    />
+                  </picture>
                 </div>
               </div>
 
@@ -167,11 +170,14 @@ function App() {
               {/* Yard Sign - desktop only, nested inside photo column */}
               <div className="mt-12 fade-in-delay-2">
                 <div className="w-full max-w-[360px]">
-                  <img
-                    src="./vince-yard-sign.png"
-                    alt="Vincent Jay Peterson yard sign"
-                    className="w-full h-auto rounded-[10px] border border-gray-200"
-                  />
+                  <picture>
+                    <source srcSet="./vince-yard-sign-720.webp" type="image/webp" />
+                    <img
+                      src="./vince-yard-sign-720.jpg"
+                      alt="Vincent Jay Peterson yard sign"
+                      className="w-full h-auto rounded-[10px] border border-gray-200"
+                    />
+                  </picture>
                 </div>
               </div>
 
