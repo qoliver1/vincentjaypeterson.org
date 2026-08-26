@@ -60,9 +60,13 @@ function App() {
               </div>
 
               {/* Campaign Statement */}
-              <div className="fade-in-delay space-y-6 py-2">
+              <div className="fade-in-delay space-y-4 py-2">
                 <p className="text-base md:text-lg font-medium text-gray-800 max-w-prose">
-                  Bring common sense back to the Otsego City Council. Keep Otsego a place where families can still afford to live.
+                  Bring common sense back to the Otsego City Council.
+                </p>
+                <div className="border-t border-gray-200 my-3"></div>
+                <p className="text-base md:text-lg text-gray-700 max-w-prose">
+                  Keep Otsego a place where families can still afford to live.
                 </p>
               </div>
 
