@@ -89,7 +89,7 @@ function App() {
 
               {/* Yard Sign - mobile only */}
               <div className="lg:hidden fade-in-delay-2 mt-6">
-                <div className="relative w-full max-w-[360px] h-[240px] overflow-hidden rounded-[10px] mx-auto">
+                <div className="relative w-full max-w-[360px] h-[240px] overflow-hidden rounded-[10px] border border-gray-200 mx-auto">
                   <img
                     src="./vince-yard-sign.png"
                     alt="Vincent Jay Peterson yard sign"
@@ -115,7 +115,7 @@ function App() {
 
               {/* Yard Sign - desktop only, nested inside photo column */}
               <div className="mt-12 fade-in-delay-2">
-                <div className="relative w-full max-w-[360px] h-[240px] overflow-hidden rounded-[10px]">
+                <div className="relative w-full max-w-[360px] h-[240px] overflow-hidden rounded-[10px] border border-gray-200">
                   <img
                     src="./vince-yard-sign.png"
                     alt="Vincent Jay Peterson yard sign"
