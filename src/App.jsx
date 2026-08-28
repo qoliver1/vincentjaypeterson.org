@@ -103,7 +103,7 @@ function App() {
                   spent and distinguish between what we need and what we simply want.
                 </p>
                 <p>My motto is simple:</p>
-                <blockquote className="border-l-4 border-gray-300 pl-5 my-2 text-xl md:text-2xl lg:text-3xl font-black tracking-tight text-black leading-tight text-center">
+                <blockquote className="border-l-4 border-gray-300 pl-5 my-2 text-xl md:text-2xl lg:text-3xl font-black tracking-tight text-black leading-tight">
                   &ldquo;Bring Common Sense Back to the Otsego City Council.&rdquo;
                 </blockquote>
                 <p>
@@ -141,21 +141,21 @@ function App() {
                     </a>
                   </span>
                 </p>
-                <div className="pt-4 space-y-1 text-xl md:text-2xl font-bold tracking-tight text-black">
+                <div className="pt-6 space-y-1 text-xl md:text-2xl font-bold tracking-tight text-black">
                   <p>In God We Trust,</p>
                   <p>Vincent J. Peterson</p>
                 </div>
               </div>
 
               {/* Campaign Slogan */}
-              <div className="fade-in-delay pt-6 border-t border-gray-200">
-                <p className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-center">
+              <div className="fade-in-delay pt-8 border-t border-gray-200">
+                <p className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight">
                   &ldquo;Bring Common Sense Back to the Otsego City Council.&rdquo;
                 </p>
               </div>
 
               {/* Yard Sign - mobile only */}
-              <div className="lg:hidden fade-in-delay-2 mt-6">
+              <div className="lg:hidden fade-in-delay-2 mt-4">
                 <div className="w-full max-w-[360px] mx-auto">
                   <picture>
                     <source srcSet="./vince-yard-sign-720.webp" type="image/webp" />
@@ -183,7 +183,7 @@ function App() {
               </div>
 
               {/* Yard Sign - desktop only, nested inside photo column */}
-              <div className="mt-12 fade-in-delay-2">
+              <div className="mt-8 fade-in-delay-2">
                 <div className="w-full max-w-[360px]">
                   <picture>
                     <source srcSet="./vince-yard-sign-720.webp" type="image/webp" />
