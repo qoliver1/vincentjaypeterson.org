@@ -48,35 +48,43 @@ function App() {
 
               {/* Biography */}
               <div className="fade-in-delay-2 space-y-5 text-base md:text-lg leading-relaxed text-gray-800 max-w-prose">
-                <p>Hello, fellow citizens of Otsego.</p>
+                <p>Hello, fellow citizens of Otsego!</p>
                 <p>
-                  I am a candidate for the Otsego City Council. My family moved to Otsego in 1972,
-                  and I graduated from St. Michael-Albertville (STMA) High School. When I turned 16
-                  and got my driver's license, I joined the Wright County Sheriff Explorers. We
-                  competed at the MN State Explorer competition four times and took home trophies
-                  all four years, and in 1989 I was elected Captain of the Explorers.
+                  My name is Vincent J. Peterson, and I am proud to announce my candidacy for Otsego
+                  City Council. My family moved to Otsego in 1972, so I have deep roots in this community.
+                  I graduated from St. Michael-Albertville High School and, at the age of 16, joined the
+                  Wright County Sheriffs Explorers after obtaining my drivers license. In 1989, I was
+                  honored to be elected Captain of the Explorers.
                 </p>
                 <p>
-                  After high school I earned my Associate of Science degree from North Hennepin
-                  Community College, majoring in Law Enforcement and minoring in Political Science.
-                  In college I was elected President of the Law Enforcement Student Organization
-                  (LESO) and also served as the LESO student council representative.
+                  After high school, I attended North Hennepin Community College, where I earned an
+                  Associate of Science degree, majoring in Law Enforcement and minoring in Political
+                  Science. I also graduated from the Minnesota Law Enforcement Training Center and
+                  successfully passed the Minnesota POST Board examination.
                 </p>
                 <p>
-                  While I was in college I worked as a security officer — and rather than become a
-                  Deputy Sheriff, I bought the security company I was working for. I owned and
-                  operated my private detective and uniformed security guard company until 2020,
-                  when I retired because of COVID. During my career I bought out four other
-                  detective/security companies and employed hundreds of detectives and security
-                  guards. I have negotiated with the CEOs and upper management of many well-known
-                  companies in the metro area, and I was a bodyguard for Hollywood movie stars like
-                  Christian Slater, Woody Harrelson, Christopher Lloyd, Marisa Tomei, Rosie Perez,
-                  Elisabeth Shue, and Gladys Knight.
+                  While attending college, I worked as a security officer. Rather than pursue a career as
+                  a deputy sheriff, I decided to take an entrepreneurial path and purchased the security
+                  company I was working for. I went on to own and operate my private detective and
+                  uniformed security company until 2020.
                 </p>
                 <p>
-                  In 1997 I was appointed Commissioner for the City of Otsego (EDAAC), on which I
-                  served for many years. Currently I am working part-time at the Albertville/Otsego
-                  compost site.
+                  Over the course of my career, I acquired four additional detective and security companies
+                  and employed hundreds of detectives and security officers. I negotiated with CEOs and
+                  upper management of many well-known companies throughout the metropolitan area and had
+                  the unique opportunity to provide security and personal protection for numerous Hollywood
+                  stars, including Christian Slater, Woody Harrelson, Christopher Lloyd, Marisa Tomei, Rosie
+                  Perez, Elisabeth Shue, and Gladys Knight.
+                </p>
+                <p>
+                  My commitment to Otsego goes beyond my professional career. In 1997, I was appointed to
+                  serve as a commissioner for the City of Otsegos EDAAC, where I served for many years.
+                  While in college, I was elected President of the Law Enforcement Student Organization (LESO)
+                  and also served as the LESO student council representative.
+                </p>
+                <p>
+                  Today, I continue to stay connected to our community by working seasonally as a part-time
+                  attendant at the Albertville/Otsego compost site.
                 </p>
                 <p>
                   The reason I am campaigning for Otsego City Council is that two seats are open,
