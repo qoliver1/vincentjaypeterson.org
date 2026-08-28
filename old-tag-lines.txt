@@ -1,0 +1,27 @@
+Vincent Jay Peterson - Old Tag Lines
+=====================================
+
+These are the two tag lines that were previously used on the campaign
+site, removed when the layout was simplified and the "Bring Common
+Sense Back to the Otsego City Council." catchphrase was promoted to
+the primary message.
+
+Source: removed from src/App.jsx in the redesign (commit 14010bb
+"content: refresh biography with catchphrase and refined signature").
+Previously appeared under the "Key Message" block in the right-side
+image column.
+
+Tag Lines
+---------
+1. No more runaway projects.
+2. No more blank checks.
+
+Styling notes
+-------------
+- Both lines used the same large, bold treatment:
+  text-xl md:text-2xl lg:text-3xl font-bold leading-tight
+- Rendered in two stacked paragraphs with a 3-unit vertical gap
+  (space-y-3 py-2) inside a container with a subtle delayed fade-in
+  animation (.fade-in-delay-2).
+- Were displayed after the "Campaign Statement" block and before the
+  "Common Sense for Otsego" slogan in the original layout.

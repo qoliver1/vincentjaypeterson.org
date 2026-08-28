@@ -155,7 +155,7 @@ function App() {
               </div>
 
               {/* Yard Sign - mobile only */}
-              <div className="lg:hidden fade-in-delay-2 mt-4">
+              <div className="lg:hidden fade-in-delay-2 mt-2">
                 <div className="w-full max-w-[360px] mx-auto">
                   <picture>
                     <source srcSet="./vince-yard-sign-720.webp" type="image/webp" />
@@ -183,7 +183,7 @@ function App() {
               </div>
 
               {/* Yard Sign - desktop only, nested inside photo column */}
-              <div className="mt-8 fade-in-delay-2">
+              <div className="mt-6 fade-in-delay-2">
                 <div className="w-full max-w-[360px]">
                   <picture>
                     <source srcSet="./vince-yard-sign-720.webp" type="image/webp" />
