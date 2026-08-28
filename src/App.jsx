@@ -51,9 +51,12 @@ function App() {
                 <p>Hello, fellow citizens of Otsego!</p>
                 <p>
                   My name is Vincent J. Peterson, and I am proud to announce my candidacy for Otsego
-                  City Council. My family moved to Otsego in 1972, so I have deep roots in this community.
-                  I graduated from St. Michael-Albertville High School and, at the age of 16, joined the
-                  Wright County Sheriffs Explorers after obtaining my drivers license. In 1989, I was
+                  City Council.
+                </p>
+                <p>
+                  My family moved to Otsego in 1972, so I have deep roots in this community. I graduated
+                  from St. Michael-Albertville High School and, at the age of 16, joined the Wright County
+                  Sheriff&rsquo;s Explorers after obtaining my driver&rsquo;s license. In 1989, I was
                   honored to be elected Captain of the Explorers.
                 </p>
                 <p>
@@ -78,71 +81,76 @@ function App() {
                 </p>
                 <p>
                   My commitment to Otsego goes beyond my professional career. In 1997, I was appointed to
-                  serve as a commissioner for the City of Otsegos EDAAC, where I served for many years.
-                  While in college, I was elected President of the Law Enforcement Student Organization (LESO)
-                  and also served as the LESO student council representative.
+                  serve as a commissioner for the City of Otsego&rsquo;s EDAAC, where I served for many
+                  years. While in college, I was elected President of the Law Enforcement Student
+                  Organization (LESO) and also served as the LESO student council representative.
                 </p>
                 <p>
                   Today, I continue to stay connected to our community by working seasonally as a part-time
                   attendant at the Albertville/Otsego compost site.
                 </p>
+
+                <h3 className="pt-4 text-xl md:text-2xl font-black tracking-tight text-black">
+                  Why am I running for Otsego City Council?
+                </h3>
                 <p>
-                  The reason I am campaigning for Otsego City Council is that two seats are open,
-                  and I firmly believe we need to put a stop to the out-of-control and unnecessary
-                  spending that the big spenders on the City Council are doing. My motto: elect me
-                  to help put a stop to the unnecessary spending. I know we are a growing city and a
-                  lot of spending needs to happen — but in my opinion there is way too much
-                  unnecessary spending. For example, a new City Hall is out of the question.
+                  There are two seats open, and I believe Otsego needs a strong voice for responsible
+                  spending, accountability, and common sense.
                 </p>
                 <p>
-                  I hope to see many of you out and about while I am campaigning. If anyone has any
-                  questions, please contact me anytime. My email is{' '}
-                  <a
-                    href="mailto:ranger770@aol.com"
-                    className="underline decoration-gray-400 underline-offset-4 hover:text-black"
-                  >
-                    ranger770@aol.com
-                  </a>{' '}
-                  and my phone/text number is{' '}
-                  <a
-                    href="tel:+16127016991"
-                    className="underline decoration-gray-400 underline-offset-4 hover:text-black"
-                  >
-                    612-701-6991
-                  </a>
-                  .
+                  Otsego is a growing community, and I understand that growth requires investment. However,
+                  I also believe we have a responsibility to carefully evaluate how taxpayer dollars are
+                  spent and distinguish between what we need and what we simply want.
                 </p>
-                <div className="pt-2 space-y-1 text-xl md:text-2xl font-bold tracking-tight text-black">
-                  <p>In God we trust,</p>
-                  <p>Vincent Jay Peterson</p>
+                <p>My motto is simple:</p>
+                <blockquote className="border-l-4 border-gray-300 pl-5 my-2 text-xl md:text-2xl lg:text-3xl font-black tracking-tight text-black leading-tight text-center">
+                  &ldquo;Bring Common Sense Back to the Otsego City Council.&rdquo;
+                </blockquote>
+                <p>
+                  For example, I do not support moving forward with an unnecessary new City Hall when I
+                  believe there are more responsible ways to prioritize our resources. I want to see our
+                  tax dollars used wisely and decisions made with the long-term interests of Otsego
+                  residents in mind.
+                </p>
+                <p>
+                  I would be honored to earn your vote and the opportunity to serve the community I have
+                  called home for so many years.
+                </p>
+                <p>
+                  I hope to see many of you out and about as I campaign. If you have questions, concerns, or
+                  simply want to talk about the future of Otsego, please don&rsquo;t hesitate to reach
+                  out. I want to hear from you.
+                </p>
+                <p className="space-y-1 text-base md:text-lg">
+                  <span className="block">
+                    Email:{' '}
+                    <a
+                      href="mailto:ranger770@aol.com"
+                      className="underline decoration-gray-400 underline-offset-4 hover:text-black"
+                    >
+                      ranger770@aol.com
+                    </a>
+                  </span>
+                  <span className="block">
+                    Call or Text:{' '}
+                    <a
+                      href="tel:+16127016991"
+                      className="underline decoration-gray-400 underline-offset-4 hover:text-black"
+                    >
+                      612-701-6991
+                    </a>
+                  </span>
+                </p>
+                <div className="pt-4 space-y-1 text-xl md:text-2xl font-bold tracking-tight text-black">
+                  <p>In God We Trust,</p>
+                  <p>Vincent J. Peterson</p>
                 </div>
               </div>
 
-              {/* Campaign Statement */}
-              <div className="fade-in-delay space-y-5 py-2">
-                <p className="text-base md:text-lg font-semibold text-gray-800 max-w-prose">
-                  Bring common sense back to the Otsego City Council.
-                </p>
-                <div className="border-t border-gray-300 my-4"></div>
-                <p className="text-base md:text-lg font-semibold text-gray-800 max-w-prose">
-                  Keep Otsego a place where families can still afford to live.
-                </p>
-              </div>
-
-              {/* Key Message */}
-              <div className="fade-in-delay-2 space-y-3 py-2">
-                <p className="text-xl md:text-2xl lg:text-3xl font-bold leading-tight">
-                  No more runaway projects.
-                </p>
-                <p className="text-xl md:text-2xl lg:text-3xl font-bold leading-tight">
-                  No more blank checks.
-                </p>
-              </div>
-
               {/* Campaign Slogan */}
-              <div className="fade-in-delay pt-10 border-t border-gray-200">
-                <p className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight">
-                  Common Sense for Otsego
+              <div className="fade-in-delay pt-6 border-t border-gray-200">
+                <p className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-center">
+                  &ldquo;Bring Common Sense Back to the Otsego City Council.&rdquo;
                 </p>
               </div>
 
