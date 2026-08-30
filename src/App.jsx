@@ -147,8 +147,18 @@ function App() {
                 </div>
               </div>
 
+              {/* Key Message - tag lines restored per client request */}
+              <div className="fade-in-delay-2 border-t border-gray-200 pt-6 space-y-3 py-2 text-center">
+                <p className="text-xl md:text-2xl lg:text-3xl font-bold leading-tight text-black">
+                  No more runaway projects.
+                </p>
+                <p className="text-xl md:text-2xl lg:text-3xl font-bold leading-tight text-black">
+                  No more blank checks.
+                </p>
+              </div>
+
               {/* Campaign Slogan */}
-              <div className="fade-in-delay pt-8 border-t border-gray-200">
+              <div className="fade-in-delay border-t border-gray-200 pt-6">
                 <p className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight">
                   &ldquo;Bring Common Sense Back to the Otsego City Council.&rdquo;
                 </p>
