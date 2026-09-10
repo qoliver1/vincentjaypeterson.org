@@ -1,7 +1,4 @@
 import React from 'react'
-import vincentPortrait from './vincentjaypeterson.jpg'
-import yardSignJpg from './vince-yard-sign-720.jpg'
-import yardSignWebp from './vince-yard-sign-720.webp'
 
 function App() {
   return (
@@ -41,7 +38,7 @@ function App() {
                 <div className="relative w-full max-w-xs mx-auto">
                   <div className="relative pb-[100%] rounded-[10px] overflow-hidden border border-gray-200">
                     <img
-                      src={vincentPortrait}
+                      src="./vincentjaypeterson.jpg"
                       alt="Vincent Jay Peterson"
                       className="absolute inset-0 w-full h-full object-cover"
                     />
@@ -53,13 +50,15 @@ function App() {
               <div className="fade-in-delay-2 space-y-5 text-base md:text-lg leading-relaxed text-gray-800 max-w-prose">
                 <p>Hello, fellow citizens of Otsego!</p>
                 <p>
-                                  My name is Vincent J. Peterson, and I am proud to announce my candidacy for Otsego
-                                  City Council. I am a husband and father who has called Otsego home since my family
-                                  moved here in 1972, giving me deep roots in this community. I graduated
-                                  from St. Michael-Albertville High School and, at the age of 16, joined the Wright County
-                                  Sheriff&rsquo;s Explorers after obtaining my driver&rsquo;s license. In 1989, I was
-                                  honored to be elected Captain of the Explorers.
-                                </p>
+                  My name is Vincent J. Peterson, and I am proud to announce my candidacy for Otsego
+                  City Council.
+                </p>
+                <p>
+                  My family moved to Otsego in 1972, so I have deep roots in this community. I graduated
+                  from St. Michael-Albertville High School and, at the age of 16, joined the Wright County
+                  Sheriff&rsquo;s Explorers after obtaining my driver&rsquo;s license. In 1989, I was
+                  honored to be elected Captain of the Explorers.
+                </p>
                 <p>
                   After high school, I attended North Hennepin Community College, where I earned an
                   Associate of Science degree, majoring in Law Enforcement and minoring in Political
@@ -169,9 +168,9 @@ function App() {
               <div className="lg:hidden fade-in-delay-2 mt-2">
                 <div className="w-full max-w-[360px] mx-auto">
                   <picture>
-                    <source srcSet={yardSignWebp} type="image/webp" />
+                    <source srcSet="./vince-yard-sign-720.webp" type="image/webp" />
                     <img
-                      src={yardSignJpg}
+                      src="./vince-yard-sign-720.jpg"
                       alt="Vincent Jay Peterson yard sign"
                       className="w-full h-auto rounded-[10px] border border-gray-200"
                     />
@@ -186,7 +185,7 @@ function App() {
               <div className="w-full max-w-sm">
                 <div className="relative pb-[100%] rounded-[10px] overflow-hidden border border-gray-200">
                   <img
-                    src={vincentPortrait}
+                    src="./vincentjaypeterson.jpg"
                     alt="Vincent Jay Peterson"
                     className="absolute inset-0 w-full h-full object-cover"
                   />
@@ -197,9 +196,9 @@ function App() {
               <div className="mt-6 fade-in-delay-2">
                 <div className="w-full max-w-[360px]">
                   <picture>
-                    <source srcSet={yardSignWebp} type="image/webp" />
+                    <source srcSet="./vince-yard-sign-720.webp" type="image/webp" />
                     <img
-                      src={yardSignJpg}
+                      src="./vince-yard-sign-720.jpg"
                       alt="Vincent Jay Peterson yard sign"
                       className="w-full h-auto rounded-[10px] border border-gray-200"
                     />
