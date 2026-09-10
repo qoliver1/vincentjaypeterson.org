@@ -50,15 +50,13 @@ function App() {
               <div className="fade-in-delay-2 space-y-5 text-base md:text-lg leading-relaxed text-gray-800 max-w-prose">
                 <p>Hello, fellow citizens of Otsego!</p>
                 <p>
-                  My name is Vincent J. Peterson, and I am proud to announce my candidacy for Otsego
-                  City Council.
-                </p>
-                <p>
-                  My family moved to Otsego in 1972, so I have deep roots in this community. I graduated
-                  from St. Michael-Albertville High School and, at the age of 16, joined the Wright County
-                  Sheriff&rsquo;s Explorers after obtaining my driver&rsquo;s license. In 1989, I was
-                  honored to be elected Captain of the Explorers.
-                </p>
+                                  My name is Vincent J. Peterson, and I am proud to announce my candidacy for Otsego
+                                  City Council. I am a husband and father who has called Otsego home since my family
+                                  moved here in 1972, giving me deep roots in this community. I graduated
+                                  from St. Michael-Albertville High School and, at the age of 16, joined the Wright County
+                                  Sheriff&rsquo;s Explorers after obtaining my driver&rsquo;s license. In 1989, I was
+                                  honored to be elected Captain of the Explorers.
+                                </p>
                 <p>
                   After high school, I attended North Hennepin Community College, where I earned an
                   Associate of Science degree, majoring in Law Enforcement and minoring in Political
