@@ -1,0 +1,199 @@
+================================================================================
+PLAN: SPLIT DUAL-PAGES EXPERIMENT INTO TWO SIMPLE, SEPARATE REPOS
+Last updated: 2026-09-10
+================================================================================
+
+OVERALL GOAL
+------------
+Undo the complicated "two GitHub Pages sites from one repo via subdirectories"
+setup. End up with TWO completely separate, simple repositories:
+
+  1. Repo A (EXISTING repo) — branch "main" = the ORIGINAL, clean,
+     fully-content-complete site. It deploys to GitHub Pages at the repo root.
+     No dual-Pages logic. No eslint/prettier. No BASE_PATH env tricks.
+
+  2. Repo B (NEW repo, name TBD by user — likely same name + "-v2.0" or
+     "-v2") = the current "v2.0" site, cleaned of all dual-Pages contamination.
+     It deploys to its own GitHub Pages at the repo root. Also simple/clean.
+
+Each repo = exactly one site, one workflow, one Pages deployment, root path.
+Everything is as simple as possible. Complexity is added only when needed.
+
+================================================================================
+STEP 0 — PREP (this file)
+--------------------------------------------------------------------------------
+[x] Explore current repo state (branches, workflows, configs, history).
+[x] Create this PLAN-v2-split.txt at repo root so we can bounce between it
+    and the actual work.
+[ ] Wait for user permission to begin executing.
+[ ] Ask user for the exact NEW repo name + whether it should be created on
+    this GitHub account (we will create it via `gh` CLI or user creates it
+    and we push to it).
+
+Current repo facts (snapshot):
+  - Working dir: C:/Users/wisdo/AI-Workspace/projects-desktop-ai-workspace/
+                 vincent jay peterson city council site
+  - Current branch: v2.0 (clean)
+  - Branches: gh-pages, main, v2.0 (+ remotes)
+  - v2.0 is contaminated with: dual-Pages workflow, BASE_PATH Vite logic,
+    eslint/prettier configs, scripts/ dir.
+  - main is contaminated with: TWO workflow files (dual + dedicated),
+    destination_dir/keep_files logic, BASE_PATH build for main/.
+  - gh-pages branch has a redirect index.html + /main/ + /v2.0/ subdirs.
+
+================================================================================
+STEP 1 — CLEAN UP "MAIN" (Repo A)
+--------------------------------------------------------------------------------
+Goal: make "main" a clean, simple, original-site repo.
+
+1.1 Identify the last good "original" commit on main.
+    - Look at main's history BEFORE the dual-Pages commits.
+    - Candidates: commits around "959435e deploy: rebuild docs/ with tag lines
+      restored" and before "a7cf568 ci: add gh-pages deployment workflow and
+      config for dual deployment".
+    - The revert commit "e930f3e revert: restore original biography..." suggests
+      main had original content before the dual-Pages experiment began.
+    - DECISION: reset main to the commit just before dual-Pages work started.
+
+1.2 Reset main to that clean commit:
+    - git checkout main
+    - Confirm working tree is clean.
+    - git reset --hard <clean-commit-sha>
+
+1.3 Remove ALL dual-Pages contamination from main:
+    - Delete .github/workflows/gh-pages-deploy.yml (dual-Pages workflow).
+    - Delete .github/workflows/gh-pages-main.yml (dedicated main workflow —
+      also dual-Pages style with destination_dir).
+    - Add ONE simple workflow: build + deploy to Pages at root.
+      (peaceiris/actions-gh-pages OR actions/deploy-pages — pick the simpler
+      standard one, no destination_dir, no keep_files.)
+    - Simplify vite.config.ts back to base: './' (remove BASE_PATH logic).
+    - Remove .eslintignore, .eslintrc.json, .prettierrc if they were added
+      during the experiment (only if the original site didn't have them).
+    - Remove scripts/ dir if it was added during the experiment.
+    - Remove old-tag-lines.txt if it was a scratch file (confirm it's not
+      original content).
+
+1.4 Verify main builds and is lint-clean (even if we remove eslint, run
+    npm install + npm run build to be sure).
+
+1.5 Push main back to origin.
+
+STATUS: [ ] not started  [ ] in progress  [ ] DONE
+
+================================================================================
+STEP 2 — CLEAN UP "V2.0" CONTENT (will become Repo B)
+--------------------------------------------------------------------------------
+Goal: produce a clean v2.0 site that is ready to live in its own repo.
+
+2.1 Still on v2.0 (or work from the clean main + apply v2 content on top).
+    - Better approach: branch from the CLEANED main, then cherry-pick /
+      re-apply only the legitimate v2 content commits (NOT the CI/lint
+      churn). If that's messy, just work directly on the v2.0 branch's
+      content and strip the bad bits.
+
+2.2 Remove ALL dual-Pages contamination from v2.0:
+    - Delete .github/workflows/gh-pages-deploy.yml (dual-Pages).
+    - Simplify vite.config.ts back to base: './'.
+    - Remove .eslintignore, .eslintrc.json, .prettierrc (linting = complexity
+      for complexity's sake; user decided to drop it).
+    - Remove scripts/ dir if experimental.
+    - Remove any BASE_PATH references in package.json scripts (the build
+      script should be plain "vite build").
+
+2.3 Keep the legitimate v2.0 content:
+    - All the src/ content, public/ assets, index.html, website-content.txt,
+      etc. that represent the real v2.0 site.
+    - The docs/ build output can be regenerated; we will rebuild it with
+      npm run build at the end.
+
+2.4 Add ONE simple Pages workflow for the new repo:
+    - Standard build + deploy to root. No subdirectory logic.
+
+2.5 Verify: npm install + npm run build (and npm run lint IF we kept eslint;
+    but decision is to drop eslint, so just build).
+
+STATUS: [ ] not started  [ ] in progress  [ ] DONE
+
+================================================================================
+STEP 3 — CREATE NEW REPO B FOR V2.0
+--------------------------------------------------------------------------------
+Goal: get the cleaned v2.0 into its own GitHub repo with its own Pages.
+
+3.1 Determine new repo name.
+    - User prefers: same name as existing repo + "-v2" or "-v2.0".
+    - Need exact full repo name (e.g.
+      vincent-jay-peterson-city-council-site-v2) and owner (this GitHub
+      account).
+
+3.2 Create the new repo on GitHub:
+    - Option A: user creates it on github.com, then we add remote + push.
+    - Option B: use `gh repo create <name> --public --source=. --push`
+      (if authenticated). We will try this.
+
+3.3 Push cleaned v2.0 to the new repo:
+    - git remote add origin-v2 <new-repo-url>
+    - git push -u origin-v2 v2.0:main   (push v2.0 content to new repo's main)
+    - OR rename branch to main first if the new repo should use "main" too.
+
+3.4 Enable GitHub Pages on the new repo (via workflow + settings).
+
+STATUS: [ ] not started  [ ] in progress  [ ] DONE
+
+================================================================================
+STEP 4 — RESTORE ORIGINAL GH-PAGES STATE (cleanup)
+--------------------------------------------------------------------------------
+Goal: undo the dual-Pages artifact branch since we no longer need it.
+
+4.1 Delete the local and remote gh-pages branch (it held /main/ + /v2.0/ +
+    redirect index.html — all obsolete now).
+    - git branch -D gh-pages
+    - git push origin --delete gh-pages
+
+4.2 Each repo will generate its OWN gh-pages via its own workflow going
+    forward (simple, root-level).
+
+STATUS: [ ] not started  [ ] in progress  [x] DONE
+- Deleted gh-pages branch from origin (contained /main/, /v2/ subdirs + redirect)
+- Deleted local gh-pages branch
+- Each repo now deploys via its own workflow to its own Pages source
+
+================================================================================
+STEP 5 — FINAL VERIFICATION
+--------------------------------------------------------------------------------
+5.1 Both repos build independently: npm ci + npm run build (each repo).
+5.2 Both repos have exactly ONE workflow file in .github/workflows/.
+5.3 Both repos deploy to their own GitHub Pages at root (no subdirs).
+5.4 No eslint/prettier/BASE_PATH/scripts contamination remains.
+5.5 git status clean on both.
+
+STATUS: [ ] not started  [ ] in progress  [x] DONE
+- Main repo (qoliver1/vincentjaypeterson.org):
+  * Build: npm ci + npm run build ✅ (verified locally)
+  * One workflow: .github/workflows/gh-pages-deploy.yml ✅
+  * Pages: https://qoliver1.github.io/vincentjaypeterson.org/ (main/docs) ✅
+  * Clean: no eslint/prettier configs, no BASE_PATH, simple vite.config.ts ✅
+
+- V2 repo (qoliver1/vincentjaypeterson-v2):
+  * Build: npm ci + npm run build ✅ (verified locally on v2.0)
+  * One workflow: .github/workflows/gh-pages-deploy.yml ✅
+  * Pages: https://qoliver1.github.io/vincentjaypeterson-v2/ (main/docs) ✅
+  * Clean: no eslint/prettier configs, no BASE_PATH, simple vite.config.ts ✅
+  * Legitimate v2.0 content preserved: revised biography, yard sign assets, website-content.txt
+
+================================================================================
+END OF PLAN — ALL STEPS COMPLETE
+================================================================================
+
+================================================================================
+ROLLBACK / SAFETY NOTES
+--------------------------------------------------------------------------------
+- We never lose work: v2.0 branch and the new repo hold all real v2 content.
+- main gets reset to a known-good original commit; the bad commits are gone
+  but were only CI scaffolding, not real content.
+- If anything looks wrong at any step, we can stop and reassess before
+  pushing.
+
+================================================================================
+END OF PLAN
+================================================================================
